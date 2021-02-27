@@ -1,18 +1,30 @@
+/* General */
 
-.navbar{
-    height: 80px;
+@font-face {
+  font-family: "Montserrat";
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
 }
 
-.nav-link{
-    margin-left: 20px;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
 }
 
-.button{
-    border: 1px solid black;
-    padding: 10px 35px 10px 35px !important;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
 }
 
-.sec-two{
-    height: 500px;
-    border: 1px solid red;
+/* Header */
+
+.navbar {
+  height: 80px;
+}
+
+.sec-two {
+  height: 500px;
+  border: 1px solid red;
 }
