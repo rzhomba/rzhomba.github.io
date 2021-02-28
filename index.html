@@ -294,13 +294,14 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-12 d-flex justify-content-center multiple-items">
-          <div class="person">person1</div>
-          <div class="person">person2</div>
-          <div class="person">person3</div>
-          <div class="person">person4</div>
-          <div class="person">person5</div>
-          <div class="person">person6</div>
+        <div class="col-12 d-flex justify-content-center slider">
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
         </div>
       </div>
     </div>
@@ -346,10 +347,40 @@
   <script src="js/script.js"></script>
 
   <script>
-    $('.multiple-items').slick({
+    $('.slider').slick({
+      dots: false,
       infinite: true,
+      speed: 300,
       slidesToShow: 5,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
   </script>
 
