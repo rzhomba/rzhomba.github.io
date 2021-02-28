@@ -20,7 +20,7 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="#"> <img src="img/logo.svg" alt="logo"> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,13 +29,13 @@
       </button>
       <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
         <ul class="navbar-nav justify-content-between align-items-center">
-          <li class="nav-item"> <a class="nav-link" href="#">Servicii</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Despre noi</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Strategii</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">De ce noi</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Echipă</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#services">Servicii</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#aboutus">Despre noi</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#workstages">Strategie</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#whywe">De ce noi</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#ourteam">Echipă</a> </li>
           <li class="nav-item">
-            <a class="btn btn-dark" href="#">Связаться с нами</a>
+            <a class="btn btn-dark" href="#contactus">Связаться с нами</a>
           </li>
         </ul>
 
@@ -49,14 +49,14 @@
     <div class="container d-flex flex-column justify-content-center align-items-center h-100">
       <h1>GEMSTONE</h1>
       <h2>Lorem, ipsum.</h2>
-      <a href="#" class="btn btn-light">
+      <a href="#contactus" class="btn btn-light">
         Связаться с нами
       </a>
     </div>
   </header>
 
   <!-- Services -->
-  <section class="services">
+  <section class="services" id="services">
     <h2 class="services-title text-center">Servicii</h2>
     <div class="container">
       <div class="row">
@@ -185,7 +185,7 @@
             navigat, promovăm paginile web pe motoarele de căutare şi concepem şi ducem campanii de
             publicitate pe internet pentru afacerea d-stră.
           </p>
-          <a href="#" class="aboutus-btn btn btn-dark">
+          <a href="#contactus" class="aboutus-btn btn btn-dark">
             Связаться с нами
           </a>
         </div>
@@ -275,6 +275,10 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa et distinctio veniam adipisci fuga labore
               amet perferendis, minus non magnam?</p>
           </div>
+
+          <a href="#contactus" class="btn btn-dark align-self-center">
+            Связаться с нами
+          </a>
         </div>
         <div class="whywe-photo col-5 d-flex justify-content-center">
           <img src="img/whywe.png" alt="">
@@ -309,18 +313,25 @@
     </h2>
 
     <div class="container">
-      <div class="row">
+      <div class="row position-relative">
         <form class="contactus-form col-xl-5">
-          <input type="text" class="form-control" placeholder="Name"id="name">
-          <input type="text" class="form-control" placeholder="Numărul de telefon"id="phone">
+          <input type="text" class="form-control" placeholder="Name" id="name">
+          <input type="text" class="form-control" placeholder="Numărul de telefon" id="phone">
           <input type="email" class="form-control" placeholder="E-mail" id="email">
           <textarea rows="6" class="form-control" placeholder="Descriere proiectului" id="desc"></textarea>
           <button type="submit" class="btn btn-dark">Submit</button>
         </form>
+
+        <div class="contactus-separator"></div>
+
+        <div class="contactus-info col-xl-5 offset-xl-2">
+          <div class="bg-dark" style="width: 450px; height: 250px;"></div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer> © Gemstone 2021. All rights reserved. </footer>
 
   <!-- Bootstrap JS -->
@@ -331,6 +342,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- slick js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- -->
+  <script src="js/script.js"></script>
 
   <script>
     $('.multiple-items').slick({

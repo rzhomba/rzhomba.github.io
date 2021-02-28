@@ -108,6 +108,8 @@ h3 {
 /* Header */
 
 .header {
+  margin-top: 80px;
+
   position: relative;
   height: 90vh;
   min-height: 600px;
@@ -314,10 +316,12 @@ h3 {
 
 .contactus-title {
   padding: 60px 0 0 0;
+  margin-bottom: 70px;
 }
 
 .contactus-form {
-  margin: 70px 0 100px 0;
+  /* margin: 70px 0 100px 0; */
+  margin-bottom: 100px;
 }
 
 .contactus-form > input {
@@ -326,6 +330,16 @@ h3 {
 
 .contactus-form > textarea {
   margin-bottom: 40px;
+}
+
+.contactus-separator {
+  position: absolute;
+  width: 1px;
+  top: -30px;
+  bottom: 100px;
+  left: 50%;
+  padding: 0;
+  background-color: #333333;
 }
 
 /* Footer */
