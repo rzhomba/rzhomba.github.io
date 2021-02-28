@@ -121,3 +121,24 @@ h3 {
 .header h2 {
   margin-bottom: 104px;
 }
+
+/* Services */
+
+.services {
+  padding: 0px 85px 0px 85px;
+}
+
+.services-title {
+  margin: 80px 0px 40px 0px;
+}
+
+.card {
+  height: 332px;
+  width: 285px;
+  margin: 0px 195px 80px 0px;
+  border: 1px solid red;
+}
+
+.card-img {
+  margin: 20px 0px 20px 0px;
+}
