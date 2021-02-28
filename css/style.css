@@ -35,12 +35,12 @@ a:hover {
   color: #222222;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 { 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
 }
 
@@ -108,7 +108,7 @@ h3 {
   min-height: 600px;
   max-height: 1024px;
 
-  background-color: rgba(0, 0, 0, .65);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .header h1,
@@ -169,7 +169,6 @@ h3 {
   padding: 0px 10px 0px 10px;
 }
 
-
 /* About Us */
 
 .aboutus {
@@ -206,20 +205,56 @@ h3 {
 
 #whywe {
   background-color: #fafafa;
-  min-height: 600px;
-  max-height: 1024px;
+  min-height: 695px;
   margin: 100px 0px 0px 0px;
 }
 
 .whywe-main-title {
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0px 40px 0px;
 }
 
 .whywe-content {
-  border: 1px solid red;
+  margin-top: 63px;
 }
 
-.whywe-photo {
-  width: 442px;
-  height: 520px;
+.whywe-title {
+  margin: 0px 0px 25px 0px;
+}
+
+.whywe-categories {
+  margin: 0px 0px 25px 0px;
+}
+
+/* our team */
+
+.ourteam {
+  min-height: 500px;
+}
+
+.ourteam-main-title {
+  margin: 80px 0px 40px 0px;
+}
+
+.swiper-container {
+  height: 350px;
+}
+
+.swiper-slide {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid red;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
