@@ -149,6 +149,7 @@ h3 {
   height: 332px;
   width: 285px;
   margin: auto;
+  margin-bottom: 40px;
   border: 1px solid #eee;
 }
 
@@ -176,6 +177,10 @@ h3 {
   margin-top: 120px;
 }
 
+.aboutus .container-fluid {
+  padding-left: 0;
+}
+
 .aboutus-header {
   margin-top: 40px;
   margin-bottom: 30px;
@@ -198,7 +203,56 @@ h3 {
 }
 
 .workstages-card {
+  position: relative;
   height: 250px;
+  margin-bottom: 40px;
+
+  background-color: rgba(51, 51, 51, 0.75);
+}
+
+.workstages-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background-size: cover;
+}
+
+.workstages-1::before {
+  background-image: url(../img/work1.jpg);
+}
+
+.workstages-2::before {
+  background-image: url(../img/work2.jpg);
+}
+
+.workstages-3::before {
+  background-image: url(../img/work3.jpg);
+}
+
+.workstages-4::before {
+  background-image: url(../img/work4.jpg);
+}
+
+.workstages-card h2 {
+  padding: 30px 20px;
+  color: #fafafa;
+}
+
+.workstages-card h1 {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  color: #fafafa;
+}
+
+.workstages-card p {
+  padding: 0 20px;
+  color: #fafafa;
 }
 
 /* Why we */
@@ -206,7 +260,7 @@ h3 {
 #whywe {
   background-color: #fafafa;
   min-height: 695px;
-  margin: 100px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
 }
 
 .whywe-main-title {

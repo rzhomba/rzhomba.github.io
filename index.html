@@ -111,8 +111,6 @@
           </div>
         </div>
 
-        <div style="height: 40px"></div>
-
         <div class="col-xl-4">
           <div class="services-card">
             <div class="services-card-img d-flex justify-content-center">
@@ -172,20 +170,22 @@
 
   <!-- About Us -->
   <section class="aboutus" id="aboutus">
-    <div class="row">
-      <img src="img/about.jpg" class="col-6" alt="">
-      <div class="aboutus-content col-6 d-flex flex-column align-items-center">
-        <h2 class="aboutus-header">Despre noi</h2>
-        <p class="aboutus-text text-center">
-          Suntem un studio de web design tânăr, recent creat în 2021, format din oameni profesioniști şi
-          energici. Suntem plini de dorinţă de a ne afirma pe piaţa Republicii Moldova şi suntem în
-          căutarea primilor noştri clienţi. Creăm pagini web cu design individual, interesante şi uşor de
-          navigat, promovăm paginile web pe motoarele de căutare şi concepem şi ducem campanii de
-          publicitate pe internet pentru afacerea d-stră.
-        </p>
-        <a href="#" class="aboutus-btn btn btn-dark">
-          Связаться с нами
-        </a>
+    <div class="container-fluid">
+      <div class="row">
+        <img src="img/about.jpg" class="col-6" alt="">
+        <div class="aboutus-content col-6 d-flex flex-column align-items-center">
+          <h2 class="aboutus-header">Despre noi</h2>
+          <p class="aboutus-text text-center">
+            Suntem un studio de web design tânăr, recent creat în 2021, format din oameni profesioniști şi
+            energici. Suntem plini de dorinţă de a ne afirma pe piaţa Republicii Moldova şi suntem în
+            căutarea primilor noştri clienţi. Creăm pagini web cu design individual, interesante şi uşor de
+            navigat, promovăm paginile web pe motoarele de căutare şi concepem şi ducem campanii de
+            publicitate pe internet pentru afacerea d-stră.
+          </p>
+          <a href="#" class="aboutus-btn btn btn-dark">
+            Связаться с нами
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -198,14 +198,57 @@
 
     <div class="container">
       <div class="row">
-        <div class="workstages-card col-xl-4 offset-xl-1">
-
+        <div class="col-xl-5 offset-xl-1">
+          <div class="workstages-card workstages-1">
+            <h2>Planificarea</h2>
+            <h1>1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque voluptatem eum culpa, dolorem
+              voluptatibus adipisci tempore aliquid pariatur nemo a ut quasi est facilis ad laudantium. Eum, natus?
+            </p>
+          </div>
         </div>
+
+        <div class="col-xl-5">
+          <div class="workstages-card workstages-2">
+            <h2>Design</h2>
+            <h1>2</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque voluptatem eum culpa, dolorem
+              voluptatibus adipisci tempore aliquid pariatur nemo a ut quasi est facilis ad laudantium. Eum, natus?
+            </p>
+          </div>
+        </div>
+
+        <!-- <div style="height: 40px;"></div> -->
+
+        <div class="col-xl-5 offset-xl-1">
+          <div class="workstages-card workstages-3">
+            <h2>Development</h2>
+            <h1>3</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque voluptatem eum culpa, dolorem
+              voluptatibus adipisci tempore aliquid pariatur nemo a ut quasi est facilis ad laudantium. Eum, natus?
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-5">
+          <div class="workstages-card workstages-4">
+            <h2>Suport</h2>
+            <h1>4</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque voluptatem eum culpa, dolorem
+              voluptatibus adipisci tempore aliquid pariatur nemo a ut quasi est facilis ad laudantium. Eum, natus?
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Why we ? -->
+  <!-- Why We ? -->
   <section class="whywe" id="whywe">
     <div class="text-center">
       <h2 class="whywe-main-title">De ce noi ?</h2>
@@ -254,6 +297,7 @@
             <div class="swiper-slide">Slide 4</div>
             <div class="swiper-slide">Slide 5</div>
             <div class="swiper-slide">Slide 6</div>
+
             <!-- arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -269,19 +313,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
-    <!-- swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 6,
-        spaceBetween: 30,
-        freeMode: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
-    </script>
+  <!-- swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 
 </body>
 
