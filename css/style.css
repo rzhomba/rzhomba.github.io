@@ -58,6 +58,7 @@ h3 {
 
 .btn {
   padding: 12px 40px;
+  border-radius: 8px;
 }
 
 .btn-dark {
@@ -76,6 +77,10 @@ h3 {
 
 .bg-light {
   background-color: #fafafa !important;
+}
+
+.bg-dark {
+  background-color: #333333 !important;
 }
 
 /* Navbar */
@@ -204,7 +209,7 @@ h3 {
 
 .workstages-card {
   position: relative;
-  height: 250px;
+  height: 265px;
   margin-bottom: 40px;
 
   background-color: rgba(51, 51, 51, 0.75);
@@ -255,7 +260,7 @@ h3 {
   color: #fafafa;
 }
 
-/* Why we */
+/* Why We */
 
 #whywe {
   background-color: #fafafa;
@@ -279,7 +284,7 @@ h3 {
   margin: 0px 0px 25px 0px;
 }
 
-/* our team */
+/* Our Team */
 
 .ourteam {
   min-height: 500px;
@@ -299,4 +304,38 @@ h3 {
 
 .slick-arrow {
   background-color: black;
+}
+
+/* Contact Us */
+
+.contactus {
+  background-color: #fafafa;
+}
+
+.contactus-title {
+  padding: 60px 0 0 0;
+}
+
+.contactus-form {
+  margin: 70px 0 100px 0;
+}
+
+.contactus-form > input {
+  margin-bottom: 30px;
+}
+
+.contactus-form > textarea {
+  margin-bottom: 40px;
+}
+
+/* Footer */
+
+footer {
+  height: 60px;
+  background-color: #333333;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .875rem;
 }
