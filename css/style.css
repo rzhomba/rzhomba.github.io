@@ -35,10 +35,30 @@ a:hover {
   color: #222222;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+.btn {
+  padding: 12px 40px;
+}
+
 .btn-dark {
   background-color: #333333;
   color: #fafafa;
-  padding: 12px 40px;
+}
+
+.btn-light {
+  background-color: #fafafa;
+  color: #333333;
 }
 
 /* Navbar */
@@ -56,7 +76,7 @@ a:hover {
 }
 
 .navbar
-.btn-dark {
+.btn {
   padding: 10px 30px;
 }
 
@@ -77,6 +97,10 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
+.header h1, h2, h3, p {
+  color: #fafafa;
+}
+
 .header::before {
   content: '';
   position: absolute;
@@ -88,4 +112,12 @@ a:hover {
 
   background-image: url(../img/header.jpg);
   background-size: cover;
+}
+
+.header h1 {
+  margin-bottom: 24px;
+}
+
+.header h2 {
+  margin-bottom: 104px;
 }
