@@ -194,3 +194,24 @@ h3 {
   margin-top: auto;
   margin-bottom: 30px;
 }
+
+/* Why we */
+#whywe {
+  background-color: #fafafa;
+  min-height: 600px;
+  max-height: 1024px;
+  margin: 100px 0px 0px 0px;
+}
+
+.whywe-main-title {
+  padding: 30px 0px 0px 0px;
+}
+
+.whywe-content {
+  border: 1px solid red;
+}
+
+.whywe-photo {
+  width: 442px;
+  height: 520px;
+}
