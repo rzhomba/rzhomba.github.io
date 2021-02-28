@@ -84,16 +84,13 @@ h3 {
   height: 80px;
 }
 
-.navbar-expand-lg
-.navbar-nav
-.nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {
   padding-left: 0;
   padding-right: 0;
   margin-right: 20px;
 }
 
-.navbar
-.btn {
+.navbar .btn {
   padding: 10px 30px;
 }
 
@@ -114,15 +111,15 @@ h3 {
   background-color: rgba(0, 0, 0, .65);
 }
 
-.header h1, 
-.header h2, 
+.header h1,
+.header h2,
 .header h3,
 .header p {
   color: #fafafa;
 }
 
 .header::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 0;
@@ -156,12 +153,26 @@ h3 {
   height: 332px;
   width: 285px;
   margin: 0px 195px 80px 0px;
-  border: 1px solid red;
+  border: 1px solid #eee;
 }
 
 .card-img {
   margin: 20px 0px 20px 0px;
 }
+
+.main-title {
+  font-weight: 600;
+}
+
+.card-text {
+  padding: 0px 5px 0px 5px;
+}
+
+.main-text {
+  font-size: 0.875rem;
+  padding: 0px 10px 0px 10px;
+}
+
 
 /* About Us */
 
