@@ -141,22 +141,18 @@ h3 {
 
 /* Services */
 
-.services {
-  padding: 0px 85px 0px 85px;
-}
-
 .services-title {
   margin: 80px 0px 40px 0px;
 }
 
-.card {
+.services-card {
   height: 332px;
   width: 285px;
-  margin: 0px 195px 80px 0px;
+  margin: auto;
   border: 1px solid #eee;
 }
 
-.card-img {
+.services-card-img {
   margin: 20px 0px 20px 0px;
 }
 
@@ -164,7 +160,7 @@ h3 {
   font-weight: 600;
 }
 
-.card-text {
+.services-card-text {
   padding: 0px 5px 0px 5px;
 }
 
@@ -178,6 +174,7 @@ h3 {
 
 .aboutus {
   background-color: #fafafa;
+  margin-top: 120px;
 }
 
 .aboutus-header {
@@ -195,7 +192,18 @@ h3 {
   margin-bottom: 30px;
 }
 
+/* Work Stages */
+
+.workstages-title {
+  margin: 80px 0 60px 0;
+}
+
+.workstages-card {
+  height: 250px;
+}
+
 /* Why we */
+
 #whywe {
   background-color: #fafafa;
   min-height: 600px;
