@@ -167,13 +167,12 @@ h3 {
 }
 
 .services-card:hover {
-  /* -webkit-box-shadow: 1px 1px 17px 1px rgba(34, 126, 255, 0.56); */
-  /* box-shadow: 1px 1px 12px 4px rgba(34, 126, 255, 0.56); */
+  -webkit-box-shadow: 1px 1px 17px 1px rgba(34, 126, 255, 0.56);
+  box-shadow: 1px 1px 12px 4px rgba(34, 126, 255, 0.56);
   transition: 0.2s;
-  border: 1px solid #333;
-  /* border: 1px solid rgba(34, 126, 255, 0.56); */
+  border: 1px solid rgba(34, 126, 255, 0.56);
   cursor: pointer;
-  transform: scale(1.15, 1.15);
+  transform: scale(1.05, 1.05);
 }
 
 .services-card-img {
@@ -299,7 +298,13 @@ h3 {
 
 .whywe-categories {
   margin: 0px 0px 25px 0px;
+  display: flex;
 }
+
+.whywe-img {
+  margin: 20px 20px 20px 20px;
+}
+
 
 /* Our Team */
 
