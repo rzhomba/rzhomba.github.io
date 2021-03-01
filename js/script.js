@@ -9,8 +9,6 @@ $(document).on("scroll", () => {
     $("#navbar-button").addClass("btn-dark");
     $("#navbar-button").removeClass("btn-minimized");
   }
-
-  // console.log(window.scrollY > 80);
 })
 
 // Slider slick
