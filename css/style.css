@@ -160,6 +160,14 @@ h3 {
   border: 1px solid #eee;
 }
 
+.services-card:hover {
+  -webkit-box-shadow: 1px 1px 17px 1px rgba(34, 126, 255, 0.56);
+  box-shadow: 1px 1px 17px 1px rgba(34, 126, 255, 0.56);
+  transition: 0.5s;
+  border: 1px solid rgba(34, 126, 255, 0.56);
+  cursor: pointer;
+}
+
 .services-card-img {
   margin: 20px 0px 20px 0px;
 }
@@ -174,7 +182,7 @@ h3 {
 
 .main-text {
   font-size: 0.875rem;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 20px 0px 20px;
 }
 
 /* About Us */
@@ -218,7 +226,7 @@ h3 {
 }
 
 .workstages-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -296,7 +304,7 @@ h3 {
   margin: 80px 0px 40px 0px;
 }
 
-.slider { 
+.slider {
   padding: 0px 0px 0px 25px;
 }
 
@@ -304,7 +312,7 @@ h3 {
   content: url(/img/prev.svg);
 }
 
-.slick-next::before{
+.slick-next::before {
   content: url(../img/next.svg);
 }
 
@@ -321,11 +329,12 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
   /* background: url('../img/1.jpg') no-repeat; */
   /* background-position: center; */
 }
 
-.slider-name{
+.slider-name {
   display: flex;
   justify-content: center;
   margin: 20px 0px 0px 0px;
@@ -337,10 +346,9 @@ h3 {
   justify-content: center;
 }
 
-.slider .slick-arrow::before{
+.slider .slick-arrow::before {
   color: gray;
 }
-
 
 /* Contact Us */
 
@@ -407,5 +415,5 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
