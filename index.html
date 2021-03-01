@@ -10,11 +10,11 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-  <!-- slick css -->
+  <!-- Slick CSS -->
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -326,7 +326,12 @@
         <div class="contactus-separator"></div>
 
         <div class="contactus-info col-xl-5 offset-xl-2">
-          <div class="bg-dark" style="width: 450px; height: 250px;"></div>
+          <div class="bg-dark" id="map" style="height: 250px;"></div>
+          
+          <div>
+            <img src="" alt="">
+            <p>str. Abcdefgh 123</p>
+          </div>
         </div>
       </div>
     </div>
@@ -339,11 +344,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
-  <!-- jquery -->
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- slick js -->
+  <!-- Slick JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <!-- -->
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
+
+  <!-- JS -->
   <script src="js/script.js"></script>
 
   <script>
