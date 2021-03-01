@@ -1,6 +1,16 @@
 // Navbar
 $(document).on("scroll", () => {
   navbar.style.height = 80 - Math.min(Math.max(window.scrollY - 80, 0), 25) + 'px';
+
+  if (window.scrollY > 80) {
+    $("#navbar-button").removeClass("btn-dark");
+    $("#navbar-button").addClass("btn-minimized");
+  } else {
+    $("#navbar-button").addClass("btn-dark");
+    $("#navbar-button").removeClass("btn-minimized");
+  }
+
+  // console.log(window.scrollY > 80);
 })
 
 // Slider slick

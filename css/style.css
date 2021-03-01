@@ -99,6 +99,11 @@ h3 {
   padding: 10px 30px;
 }
 
+.navbar .btn-minimized {
+  padding: 0 10px;
+  transition: padding .5s;
+}
+
 .navbar-lang {
   font-weight: 600;
   margin-left: 30px;
@@ -149,7 +154,7 @@ h3 {
 /* Services */
 
 .services-title {
-  margin: 80px 0px 40px 0px;
+  padding: 80px 0px 40px 0px;
 }
 
 .services-card {
@@ -214,7 +219,7 @@ h3 {
 /* Work Stages */
 
 .workstages-title {
-  margin: 80px 0 60px 0;
+  padding: 80px 0 60px 0;
 }
 
 .workstages-card {
@@ -271,14 +276,14 @@ h3 {
 
 /* Why We */
 
-#whywe {
+.whywe {
   background-color: #fafafa;
   min-height: 695px;
   margin: 80px 0px 0px 0px;
 }
 
 .whywe-main-title {
-  padding: 30px 0px 40px 0px;
+  padding: 40px 0px 40px 0px;
 }
 
 .whywe-content {
@@ -300,7 +305,7 @@ h3 {
 }
 
 .ourteam-main-title {
-  margin: 80px 0px 40px 0px;
+  padding: 80px 0px 40px 0px;
 }
 
 .slider {
@@ -361,12 +366,17 @@ h3 {
 }
 
 .contactus-form {
-  /* margin: 70px 0 100px 0; */
   margin-bottom: 100px;
 }
 
 .contactus-form > input {
   margin-bottom: 30px;
+}
+
+.contactus-form > input:focus,
+.contactus-form > textarea:focus {
+  box-shadow: 0 0 0 2px rgba(51, 51, 51, 0.3);
+  outline: 0 none;
 }
 
 .contactus-form > textarea {
