@@ -373,6 +373,10 @@ a.active:after {
   display: flex;
 }
 
+.whywe-photo {
+  padding: 0px 0px 60px 120px;
+}
+
 .whywe-img {
   margin: 20px 20px 20px 20px;
 }
