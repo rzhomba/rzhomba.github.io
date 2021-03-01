@@ -221,11 +221,11 @@ a.active:after {
 /* About Us */
 
 .aboutus {
-  background-color: #fafafa;
-  margin-top: 120px;
+  padding-top: 120px;
 }
 
 .aboutus .container-fluid {
+  background-color: #fafafa;
   padding-left: 0;
 }
 
@@ -348,9 +348,12 @@ a.active:after {
 /* Why We */
 
 .whywe {
-  background-color: #fafafa;
   min-height: 695px;
-  margin: 80px 0px 0px 0px;
+  padding-top: 80px;
+}
+
+.whywe-inner {
+  background-color: #fafafa;
 }
 
 .whywe-main-title {
