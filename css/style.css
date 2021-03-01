@@ -361,6 +361,28 @@ h3 {
   background-color: #333333;
 }
 
+.contactus-contacts {
+  margin-top: 40px;
+}
+
+.contactus-contacts > * {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.contactus-contacts img {
+  width: 30px;
+  height: 30px;
+
+  margin-right: 20px;
+}
+
+.contactus-contacts p {
+  margin: 0;
+}
+
 /* Footer */
 
 footer {
