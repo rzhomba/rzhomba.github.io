@@ -97,11 +97,13 @@ h3 {
 
 .navbar .btn {
   padding: 10px 30px;
+  transition: padding .1s;
 }
 
 .navbar .btn-minimized {
   padding: 0 10px;
-  transition: padding .5s;
+  transition: padding .5s, background-color .2s, color .2s;
+  background-color: transparent;
 }
 
 .navbar-lang {
