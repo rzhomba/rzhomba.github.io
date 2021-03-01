@@ -206,6 +206,26 @@ h3 {
   padding-left: 0;
 }
 
+.aboutus-img {
+  object-fit: cover;
+  position: absolute;
+  right: 50%;
+  max-height: 480px;
+  width: auto;
+  padding: 0;
+}
+
+.aboutus-content {
+  position: relative;
+  left: 50%;
+  padding: 0;
+}
+
+.aboutus-content-inner {
+  margin: 0 auto 0 120px;
+  width: 440px;
+}
+
 .aboutus-header {
   margin-top: 40px;
   margin-bottom: 30px;
@@ -213,11 +233,10 @@ h3 {
 
 .aboutus-text {
   margin-bottom: 60px;
-  padding: 0px 100px 0px 120px;
 }
 
 .aboutus-btn {
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -242,7 +261,6 @@ h3 {
   border: 1px solid rgba(34, 126, 255, .5);
   transform: scale(1.05, 1.05);
 }
-
 
 .workstages-card::before {
   content: "";
@@ -329,6 +347,9 @@ h3 {
   margin: 20px 20px 20px 20px;
 }
 
+.whywe .btn {
+  margin-bottom: 40px;
+}
 
 /* Our Team */
 
@@ -366,8 +387,6 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: auto;
-  /* background: url('../img/1.jpg') no-repeat; */
-  /* background-position: center; */
 }
 
 .slider-name {
