@@ -11,45 +11,30 @@ $(document).on("scroll", () => {
   }
 })
 
-// Navbar underline 
-// const items = document.querySelectorAll("ul a");
-// items.forEach(el => {
-//   el.addEventListener("click", () => {
-//     document.querySelector("a.active").classList.remove("active");
-//     el.classList.add("active")
-//   });
-// });
+// // Scroll
+window.addEventListener('scroll', event => {
+  let nav = document.querySelector('.nav-container');
 
-// Scroll
-$(document).ready(function() {
-  $(".navbar ul li a").click(function(event) {
-    $(".navbar ul li a").removeClass('active');
-    $(this).addClass('active');
-    thisAtrrHref = $(this).attr('href');
-    thisAttrHrefOffset = $(thisAtrrHref).offset().top;
-    $("html,body").animate({scrollTop:thisAttrHrefOffset})
-    event.preventDefault
-  })
-})
+  (window.scrollY >= 20) ? nav.classList.add('scroll') : nav.classList.remove('scroll');
+});
 
-$(window).scroll(function() {
-  $("section").each(function() {
-    containerRowTop = $(this).offset().top;
-    if ($(document).scrollTop() > containerRowTop) {
-      thisOfs = $(this).attr('id');
-      $("section").removeClass('active');
-      ActiveID = $(this).addClass('active').attr('id')
+window.addEventListener('scroll', event => {
+  let navigationLinks = document.querySelectorAll('nav ul li a');
+  let fromTop = window.scrollY;
+
+  navigationLinks.forEach(link => {
+    let section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
   });
-  $(".navbar ul li").each(function(index, el) {
-    thisChildren = $(this).children('a');
-    thisChildrenHref = $(this).children('a').attr('href');
-    if (thisChildrenHref === '#' + ActiveID) {
-      $(".navbar ul li a").removeClass('active');
-      $(thisChildren).addClass('active')
-    }
-  })
-})
+});
 
 // Slider slick
 $('.slider').slick({
