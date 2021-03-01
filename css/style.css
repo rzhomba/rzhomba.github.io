@@ -322,7 +322,13 @@ h3 {
 
 .whywe-categories {
   margin: 0px 0px 25px 0px;
+  display: flex;
 }
+
+.whywe-img {
+  margin: 20px 20px 20px 20px;
+}
+
 
 /* Our Team */
 
