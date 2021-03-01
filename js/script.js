@@ -11,6 +11,46 @@ $(document).on("scroll", () => {
   }
 })
 
+// Navbar underline 
+// const items = document.querySelectorAll("ul a");
+// items.forEach(el => {
+//   el.addEventListener("click", () => {
+//     document.querySelector("a.active").classList.remove("active");
+//     el.classList.add("active")
+//   });
+// });
+
+// Scroll
+$(document).ready(function() {
+  $(".navbar ul li a").click(function(event) {
+    $(".navbar ul li a").removeClass('active');
+    $(this).addClass('active');
+    thisAtrrHref = $(this).attr('href');
+    thisAttrHrefOffset = $(thisAtrrHref).offset().top;
+    $("html,body").animate({scrollTop:thisAttrHrefOffset})
+    event.preventDefault
+  })
+})
+
+$(window).scroll(function() {
+  $("section").each(function() {
+    containerRowTop = $(this).offset().top;
+    if ($(document).scrollTop() > containerRowTop) {
+      thisOfs = $(this).attr('id');
+      $("section").removeClass('active');
+      ActiveID = $(this).addClass('active').attr('id')
+    }
+  });
+  $(".navbar ul li").each(function(index, el) {
+    thisChildren = $(this).children('a');
+    thisChildrenHref = $(this).children('a').attr('href');
+    if (thisChildrenHref === '#' + ActiveID) {
+      $(".navbar ul li a").removeClass('active');
+      $(thisChildren).addClass('active')
+    }
+  })
+})
+
 // Slider slick
 $('.slider').slick({
   dots: false,
@@ -62,3 +102,5 @@ function initMap() {
     map: map,
   });
 }
+
+// 

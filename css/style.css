@@ -112,6 +112,30 @@ h3 {
   font-size: 1.125rem;
 }
 
+ul li a {
+  position: relative;
+}
+
+a.active:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: #333;
+  left: 0;
+  bottom: 0;
+  animation: appear .2s linear;
+}
+
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 /* Header */
 
 .header {
