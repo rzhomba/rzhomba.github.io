@@ -262,6 +262,10 @@ h3 {
   transform: scale(1.05, 1.05);
 }
 
+.workstages-card:hover::after {
+  background-color: rgba(51, 51, 51, 1);
+}
+
 .workstages-card::before {
   content: "";
   position: absolute;
@@ -282,7 +286,8 @@ h3 {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(51, 51, 51, 0.75);
+  background-color: rgba(51, 51, 51, .75);
+  transition: .2s;
 }
 
 .workstages-1::before {
