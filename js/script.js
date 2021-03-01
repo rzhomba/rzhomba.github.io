@@ -88,4 +88,5 @@ function initMap() {
   });
 }
 
-// 
+// wow.js
+new WOW().init();
