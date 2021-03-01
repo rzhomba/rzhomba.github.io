@@ -296,16 +296,31 @@ h3 {
   margin: 80px 0px 40px 0px;
 }
 
+.slider { 
+  padding: 0px 0px 0px 25px;
+}
+
+.slick-prev::before {
+  content: url(/img/prev.svg);
+}
+
+.slick-next::before{
+  content: url(../img/next.svg);
+}
+
 .slider-item {
   margin: 0px 30px 0px 0px;
   outline: none;
 }
 
 .slider-photo {
-  height: 194px;
-  width: 194px;
+  height: 160px;
+  width: 160px;
   border: 1px solid black;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background: url('../img/1.jpg') no-repeat; */
   /* background-position: center; */
 }
