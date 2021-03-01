@@ -11,15 +11,15 @@ $(document).on("scroll", () => {
   }
 })
 
-// // Scroll
-window.addEventListener('scroll', event => {
-  let nav = document.querySelector('.nav-container');
+// Scroll
+// window.addEventListener('scroll', event => {
+//   let nav = document.querySelector('.nav-container');
 
-  (window.scrollY >= 20) ? nav.classList.add('scroll') : nav.classList.remove('scroll');
-});
+//   (window.scrollY >= 20) ? nav.classList.add('scroll') : nav.classList.remove('scroll');
+// });
 
 window.addEventListener('scroll', event => {
-  let navigationLinks = document.querySelectorAll('nav ul li a');
+  let navigationLinks = document.querySelectorAll('.navbar .nav-link');
   let fromTop = window.scrollY;
 
   navigationLinks.forEach(link => {
