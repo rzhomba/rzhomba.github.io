@@ -13,7 +13,7 @@
   <!-- Slick CSS -->
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -350,18 +350,18 @@
 
         <div class="contactus-info col-xl-5 offset-xl-2">
           <div class="bg-dark" id="map" style="height: 250px;"></div>
-          
+
           <div class="contactus-contacts">
             <div>
               <img src="img/contacts-location.png" alt="">
               <p>str. Abcdefgh 123</p>
             </div>
-  
+
             <div>
               <img src="img/contacts-phone.png" alt="">
               <p>+373 82 1234 56</p>
             </div>
-  
+
             <div>
               <img src="img/contacts-mail.png" alt="">
               <p>aaabbbccc@gemstone.md</p>
@@ -384,48 +384,10 @@
   <!-- Slick JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <!-- Google Maps -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    async></script>
   <!-- JS -->
   <script src="js/script.js"></script>
-
-  <script>
-    $('.slider').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-  </script>
 
 </body>
 
